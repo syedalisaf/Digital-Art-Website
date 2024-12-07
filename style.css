@@ -1,0 +1,471 @@
+.container{
+ max-width: 1200px;
+ margin: 100px auto;
+}
+
+body{
+  overflow-x: hidden;
+}
+.one{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.sidebar{
+  display: none;
+}
+
+.sidebar li{
+  display: inline-block;
+ margin: 0 8px;
+}
+
+.mobile li{
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.menu-line{
+  height: 3px;
+  width: 20px;
+  background-color: black;
+  margin-bottom: 3px;
+  animation-duration: 3s; 
+}
+
+.menu{
+  display: none;
+}
+
+
+input[type=text] {
+    width: 80%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    /* background-image: url("https://cdn-icons-png.flaticon.com/128/64/64673.png "width="20px" height="20px" ); */
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+  }
+
+  .card{
+    box-shadow: 5px 5px 5px 2px lightgray;
+    border-radius: 20px
+  }
+
+  .two .font{
+    font-size:100px;
+  }
+
+  .two{
+    display: grid;
+    grid-template-columns: 8fr 5fr;
+    gap: 50px;
+    margin-top: 50px;
+  }
+
+  .two .seperate{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+  }
+
+  .three{
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .four{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    gap: 40px;
+    text-align: center;
+    
+  }
+
+.five{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.six{
+ display: grid;
+ grid-template-columns: 2fr 2fr 2fr 2fr;
+  margin-top: 50px;
+  gap: 40px;
+  
+}
+
+.six .style{
+  display: grid;
+  grid-template-columns: 3fr 8fr;
+  gap:10px;
+  background-color: lightblue;
+}
+
+.style img{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.eight{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.nine{
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  margin-top: 50px;
+ gap: 40px;
+ width: 270px;
+}
+
+.image {
+  position: relative;
+  top: 0;
+}
+
+.nine .time {
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+
+}
+
+.first {
+  position: relative;
+  right: 15px;
+  top: 10px;
+}
+
+.first img{
+  border-radius: 35px;
+  height: 40px;
+}
+
+.second {
+  position: absolute;
+  left: 30px;
+  top: 0;
+  border-radius: -5%;
+}
+
+.gap{
+  margin-left: 20px;
+}
+
+.child1{
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  margin-left: 20px;
+ margin-top: -20px;
+}
+
+.child2{
+  display: grid;
+  grid-template-columns:2fr 4fr 1fr 1fr;
+  margin-left: 30px;
+}
+
+.ten{
+  margin-top:50px;
+  text-align: center;
+}
+
+.eleven{
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  margin-top: 50px;
+  gap: 40px;
+ width: 270px;
+}
+
+.child3{
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  margin-left: 20px;
+}
+.child4{
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  margin-left: 20px;
+ margin-top: -40px;
+}
+
+.twelve {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.twelve .btn {
+  background-color: cornflowerblue;
+}
+
+.third {
+  display: grid;
+  grid-template-columns: 2fr 3fr 6fr 2fr 2fr;
+  margin-top: 200px;
+  gap: 140px;
+}
+
+.type1{
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+}
+
+.mail{
+  display: grid;
+  grid-template-columns: 10fr 2fr;
+}
+.mail {
+  position: relative;
+}
+
+.id {
+  position: absolute;
+  left: 180px;
+}
+
+.fourth {
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media only  screen and (max-width:600px) {
+  .container{
+    display: grid;
+      grid-template-columns: 1fr;
+      overflow-x: hidden;
+      place-content: center;
+      padding: 10px;
+  }
+  .one{
+   display: flex;
+   justify-content: space-evenly;
+   width: 100%;
+    } 
+
+  .sidebar{
+   flex-direction: column; 
+   display:inline-block ;
+   width: 50%;
+   left: -292px;
+   position: absolute;
+  transition: 2.2s cubic-bezier(.36,-0.01,0,.77);  
+  }
+
+.sidebar li{
+ display: block; 
+ padding: 4px;
+ background-color: black;
+  } 
+  
+.container {
+  position: relative;
+}
+
+ ul{
+  text-align: center;
+padding-left: 0;
+  }
+
+
+  .menu{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50px;
+  }
+
+  .menu-line{
+   margin-right: 0;
+  }
+  .showmenu ul{
+    width: 220px;
+
+  }
+
+  .sidebar.showmenu{
+    left:0;
+  }
+
+  .mobile{
+    display: none;
+  }
+
+.frame{
+  margin-left: 10px;
+}
+
+.two .font{
+  text-align:center;
+  font-size: 30px ;
+  margin-left: 30px;
+}
+.two {
+  grid-template-columns: 1fr;
+}
+
+.two .para{
+  width: 100%;
+
+margin-left: 10px;
+text-align: center;
+
+}
+
+.three{
+  text-align: center;
+
+}
+.four{
+  grid-template-columns: 1fr;
+  place-self: center;
+
+}
+.five{
+  text-align: center;
+ 
+}
+.six{
+  grid-template-columns: 1fr;
+  place-self: center;
+
+}
+.eight{
+  text-align: center;
+
+}
+.nine{
+  grid-template-columns: 1fr;
+  place-self: center;
+ 
+}
+.ten{
+  text-align: center;
+
+}
+.eleven{
+  grid-template-columns: 1fr;
+  place-self: center;
+
+}
+
+.twelve{
+  
+}
+
+.third{
+   grid-template-columns: 1fr ;
+  text-align: center;
+}
+
+.third .photo{
+  margin-left: 150px;
+}
+
+.third .highlight{
+margin-right: 100px;  
+}
+
+.mail {
+  position: relative;
+  width: 250px;
+  margin-left: 150px;
+}
+
+.id {
+  position: absolute;
+  left: 150px;
+}
+
+.footer1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 10px;
+  margin-right: 20px;
+  padding: 30px;
+}
+
+.footer2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 10px;
+  margin-right: 20px;
+  padding: 30px;
+}
+
+.fourth{
+  text-align: center;
+}
+ 
+
+
+}
+
+
+
+
+        /* @media  only screen and  (max-width:980px) { 
+     .container{
+      overflow-x: hidden;
+      place-content: center;
+      padding: 10px;
+      display: grid;
+        grid-template-columns:  1fr 1fr !important; 
+    } 
+
+   .one{
+    font-size: 10px;
+   grid-template-columns: flex !important;
+  }
+
+  .two .font{
+    text-align:center !important;
+    font-size: 60px ;
+  }
+  .two {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  
+  .three{
+    text-align: center !important;
+  }
+  .four{
+    grid-template-columns: 1fr 1fr !important;
+    place-self: center;
+  }
+  .six{
+    grid-template-columns: 1fr 1fr !important;
+    place-self: center;
+  }
+  .eight{
+    text-align: center !important;
+  }
+  .nine{
+    grid-template-columns: 1fr 1fr !important;
+    place-self: center; 
+  }
+  .eleven{
+    grid-template-columns: 1fr 1fr !important;
+    
+  }
+  
+  .third{
+     
+     text-align: center !important;
+     font-size: 10px;
+  } 
+
+  .item3{
+   
+  }
+
+}  */
